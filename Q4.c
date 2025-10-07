@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    float a, area, circumference;
-    float pi = 3.14;
-
-    printf("Enter the radius of the circle: ");
+    float a, b, area, perimeter;
+    printf("Enter the length of the rectangle: ");
     scanf("%f", &a);
+    printf("Enter the width of the rectangle: ");
+    scanf("%f", &b);
 
-    area = pi * a * a;
-    circumference = 2 * pi * a ;
-    printf("The area of the circle is %f\n", area);
-    printf("The circumference of the circle is %f\n", circumference);
+    area = a * b;
+    perimeter = 2 * (a + b);    
+    printf("The area of the rectangle is %.2f\n", area);
+    printf("The perimeter of the rectangle is %.2f\n", perimeter);
     return 0;
 }
